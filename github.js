@@ -38,7 +38,7 @@ document.addEventListener("formdata", event => {
         Bugfender.sendIssue("Something's wrong", "Details of the error here...");
         Bugfender.fatal(`We couldn't make it work`);
     } else {
-        document.body.innerHTML += `Response from the server: ${jsonResponse.name}`;
+        document.body.innerHTML += `<span>Response from the server: ${jsonResponse.name}</span>`;
         Bugfender.log(`Got information successfully about ${jsonResponse.name}`);
     }
     

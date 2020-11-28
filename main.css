@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin: 10px 0px auto 0px;
+    float: right;
+    padding: 10px;
+    background-color: #009aff;
+    color: #FFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+span {
+    margin: 10px;
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    font-size: 20px;
+}
