@@ -16,3 +16,5 @@ Bugfender.init({
     appKey: `'<API_KEY>'`,
 });
 ```
+# 🌟 Want to Motivate?
+Who doesn't need motivations? Want to motivate? Give this repo a Star (🌟).
