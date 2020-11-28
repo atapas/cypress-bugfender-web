@@ -1,6 +1,6 @@
 describe("GitHub test", () => {
     it("Can fill the form", () => {
-      cy.visit("/github.html");
+      cy.visit("/");
       cy.get('button').should('be.disabled');
       cy.get("form");
   

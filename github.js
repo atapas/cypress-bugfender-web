@@ -32,14 +32,14 @@ document.addEventListener("formdata", event => {
   request.send(jsonBody);
   // get the response
   request.onload = function() {
-    const jsonResponse = JSON.parse(this.response);
-    console.log(jsonResponse);
-    if (jsonResponse.message && jsonResponse.message === 'Not Found') {
+    const json = JSON.parse(this.response);
+    console.log(json);
+    if (json.message && json.message === 'Not Found') {
         Bugfender.sendIssue("Something's wrong", "Details of the error here...");
         Bugfender.fatal(`We couldn't make it work`);
     } else {
-        document.body.innerHTML += `<span>Response from the server: ${jsonResponse.name}</span>`;
-        Bugfender.log(`Got information successfully about ${jsonResponse.name}`);
+        document.body.innerHTML += `<span>Response from the server: ${json.name}</span>`;
+        Bugfender.log(`Got information successfully about ${json.name}`);
     }
     
   };
