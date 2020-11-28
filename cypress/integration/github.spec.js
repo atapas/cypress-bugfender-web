@@ -1,5 +1,5 @@
 describe("GitHub test", () => {
-    it("Can fill the form", () => {
+    it("Get a GitHub user details", () => {
       cy.visit("/");
       cy.get('button').should('be.disabled');
       cy.get("form");
